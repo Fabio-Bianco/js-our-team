@@ -13,6 +13,16 @@ h1 {
     color: #ff4081
 }
 
+span {
+    text-transform: uppercase;
+}
+
+a {
+    color: #00bfff;
+    text-decoration: none;
+
+}
+
 .team-container {
     display: flex;
     flex-wrap: wrap;
@@ -34,15 +44,11 @@ h1 {
     width: 80px;
     height: 80px;
     object-fit: cover;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
    
 }
 .team-member div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-.team-member a {
-    color: #00bfff;
-    text-decoration: none;
 }
