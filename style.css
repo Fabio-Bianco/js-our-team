@@ -1,18 +1,12 @@
-*{
-    margin: 0;
-    padding:  0;
-    box-sizing: border-box;
-
-}
 
 body {
-    background-color:bisque;
+    background-color:#F8F4E3;
     font-family: "Fredoka", sans-serif;
     text-align: center;
 }
 
 h1 {
-    color: #ff4081
+    color: #A63446
 }
 
 span {
@@ -20,7 +14,7 @@ span {
 }
 
 a {
-    color: #00bfff;
+    color: #0C6291;
     text-decoration: none;
 
 }
@@ -35,8 +29,8 @@ a {
 .team-member {
     display: flex;
     align-items: center;
-    background: black;
-    color: white;
+    background: #000004;
+    color: #FBFEF9;
     width: 100%;
     max-width: 300px;
     padding: 10px;
@@ -53,4 +47,27 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.form-container{
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+input {
+    width: 20em;
+    height: 2em;
+    margin-top: 10px;
+    padding: 0 10;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+button{
+    margin-top: 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10 15;
 }
