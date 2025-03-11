@@ -37,4 +37,23 @@ const teamMembers = [
   }
 ];
 
-console.log(teamMembers)
+
+
+// funzione render html: il programma che fa funzioanre il tutto
+ const parentElement = document.querySelector('.team-container')
+
+ renderHTML(parentElement, teamMembers ) // invocazione delle funzione
+
+ // funzione
+ function renderHTML (parent, elements){
+  console.log(parent);
+  console.log(elements);
+  
+ }
+
+
+
+
+
+// funzione per creare html 
+
