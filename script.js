@@ -39,8 +39,11 @@ const teamMembers = [
 
 // sezione per aggiungere nuovo membro
 const memberFormElement = document.getElementById('member-form')
-console.log(memberFormElement)
 
+memberFormElement.addEventListener('submit', function(event){
+  event.preventDefault();
+  console.log('verifica aggiunta membro:ok')
+})
 // funzione per renderizzare HTML
 const parentElement = document.querySelector(".team-container");
 
