@@ -37,6 +37,10 @@ const teamMembers = [
   },
 ];
 
+// sezione per aggiungere nuovo membro
+const memberFormElement = document.getElementById('member-form')
+console.log(memberFormElement)
+
 // funzione per renderizzare HTML
 const parentElement = document.querySelector(".team-container");
 
@@ -62,3 +66,7 @@ function createHTMLElement(obj) {
         </div>
       </div>`;
 }
+
+// sezione per aggiungere membri (aggiungere oggetti all'array di partenza)
+
+
