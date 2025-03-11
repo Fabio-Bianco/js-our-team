@@ -39,10 +39,15 @@ const teamMembers = [
 
 // sezione per aggiungere nuovo membro
 const memberFormElement = document.getElementById('member-form')
+const nameElement = document.getElementById('name');
+const roleElement = document.getElementById('role');
+const imageElement = document.getElementById('image');
+const parentElement = document.querySelector(".team-container");
+
 
 memberFormElement.addEventListener('submit', addNewMember )
 // funzione per renderizzare HTML
-const parentElement = document.querySelector(".team-container");
+
 
 renderHTML(parentElement, teamMembers);
 
@@ -71,7 +76,18 @@ function createHTMLElement(obj) {
 
 function addNewMember(event){
   event.preventDefault(); 
-  console.log('add new member: ok')
+
+  const name = nameElement.value;
+  const role = roleElement.value;
+  const image = imageElement.value;
+
+  console.log(name);
+  console.log(role);
+  console.log(image);
+
+
+
+  
 }
 
 
