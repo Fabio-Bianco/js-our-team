@@ -44,6 +44,8 @@ const roleElement = document.getElementById('role');
 const imageElement = document.getElementById('image');
 const parentElement = document.querySelector(".team-container");
 
+console.log(teamMembers)
+
 
 memberFormElement.addEventListener('submit', addNewMember )
 // funzione per renderizzare HTML
@@ -85,9 +87,14 @@ function addNewMember(event){
   console.log(role);
   console.log(image);
 
+  const newMember = {
+    name,
+    role,
+    image
+  }
 
-
-  
+  teamMembers.push(newMember)
+  console.log(teamMembers)
 }
 
 
