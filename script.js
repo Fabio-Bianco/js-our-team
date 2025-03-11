@@ -40,10 +40,7 @@ const teamMembers = [
 // sezione per aggiungere nuovo membro
 const memberFormElement = document.getElementById('member-form')
 
-memberFormElement.addEventListener('submit', function(event){
-  event.preventDefault();
-  console.log('verifica aggiunta membro:ok')
-})
+memberFormElement.addEventListener('submit', addNewMember )
 // funzione per renderizzare HTML
 const parentElement = document.querySelector(".team-container");
 
@@ -70,6 +67,11 @@ function createHTMLElement(obj) {
       </div>`;
 }
 
-// sezione per aggiungere membri (aggiungere oggetti all'array di partenza)
+// funzione per aggiungere membri (aggiungere oggetti all'array di partenza)
+
+function addNewMember(event){
+  event.preventDefault(); 
+  console.log('add new member: ok')
+}
 
 
