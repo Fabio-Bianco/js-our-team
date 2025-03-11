@@ -41,6 +41,7 @@ const teamMembers = [
 const memberFormElement = document.getElementById('member-form')
 const nameElement = document.getElementById('name');
 const roleElement = document.getElementById('role');
+const emailElement = document.getElementById('email');
 const imageElement = document.getElementById('image');
 const parentElement = document.querySelector(".team-container");
 
@@ -81,6 +82,7 @@ function addNewMember(event){
 
   const name = nameElement.value;
   const role = roleElement.value;
+  const email = emailElement.value;
   const image = imageElement.value;
 
   console.log(name);
@@ -90,7 +92,8 @@ function addNewMember(event){
   const newMember = {
     name,
     role,
-    image
+    email,
+    image,
   }
 
   teamMembers.push(newMember)
