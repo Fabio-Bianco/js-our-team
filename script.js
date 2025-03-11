@@ -95,6 +95,8 @@ function addNewMember(event){
 
   teamMembers.push(newMember)
   console.log(teamMembers)
+
+  renderHTML(parentElement, teamMembers);
 }
 
 
