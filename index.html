@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
     <h1>Meet our Team</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut aut odit,
@@ -16,17 +15,24 @@
     </p>
 
     <div class="team-container">
-      <div class="team-member">
-        <img src="img/male1.png" alt="Marco Bianchi" />
-        <div>
-          <span>marco bianchi</span>
-          Designer
-          <a href="#">marcobianchi@team.com</a>
-        </div>
-      </div>
-
-      
+        // contenuto creato con funzione
     </div>
+
+    <section class="form-container">
+        <h2>Add New Member</h2>
+        <form id="member-form">
+            <div>
+                <input type="text" id="name" placeholder="Nome" required>
+            </div>
+            <div>
+                <input type="text" id="role" placeholder="Ruolo" required>
+            </div>
+            <div>
+                <input type="text" id="image" placeholder="Url dell'immagine" required>
+            </div>
+            <button type="submit">Aggiungi Membro</button>
+        </form>
+    </section>
 
     <script src="script.js"></script>
   </body>
