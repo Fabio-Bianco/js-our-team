@@ -3,57 +3,56 @@ const teamMembers = [
     name: "Marco Bianchi",
     role: "Designer",
     email: "marcobianchi@team.com",
-    img: "img/male1.png"
+    img: "img/male1.png",
   },
   {
     name: "Laura Rossi",
     role: "Front-end Developer",
     email: "laurarossi@team.com",
-    img: "img/female1.png"
+    img: "img/female1.png",
   },
   {
     name: "Giorgio Verdi",
     role: "Back-end Developer",
     email: "giorgioverdi@team.com",
-    img: "img/male2.png"
+    img: "img/male2.png",
   },
   {
     name: "Marta Ipsum",
     role: "SEO Specialist",
     email: "martarossi@team.com",
-    img: "img/female2.png"
+    img: "img/female2.png",
   },
   {
     name: "Roberto Lorem",
     role: "SEO Specialist",
     email: "robertolorem@team.com",
-    img: "img/male3.png"
+    img: "img/male3.png",
   },
   {
     name: "Daniela Amet",
     role: "Analyst",
     email: "danielaamet@team.com",
-    img: "img/female3.png"
-  }
+    img: "img/female3.png",
+  },
 ];
 
+// funzione per renderizzare HTML
+const parentElement = document.querySelector(".team-container");
 
+renderHTML(parentElement, teamMembers);
 
-// funzione render html: il programma che fa funzioanre il tutto
- const parentElement = document.querySelector('.team-container')
+function renderHTML(parent, elements) {
 
- renderHTML(parentElement, teamMembers ) // invocazione delle funzione
+  let items = "";
+  for (let i = 0; i < elements.lenght; i++) {
+    const currentElement = elements[i];
+    items += createHTMLElement(currentElement);
+    
+  }
+  parent.innerHTML = items;
 
- // funzione
- function renderHTML (parent, elements){
   console.log(parent);
-  console.log(elements);
-  
- }
+}
 
-
-
-
-
-// funzione per creare html 
-
+// funzione per creare html
