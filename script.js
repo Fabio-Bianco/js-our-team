@@ -43,16 +43,22 @@ const parentElement = document.querySelector(".team-container");
 renderHTML(parentElement, teamMembers);
 
 function renderHTML(parent, elements) {
-
   let items = "";
-  for (let i = 0; i < elements.lenght; i++) {
+  for (let i = 0; i < elements.length; i++) { // Correzione "length"
     const currentElement = elements[i];
     items += createHTMLElement(currentElement);
-    
   }
   parent.innerHTML = items;
-
-  console.log(parent);
 }
 
-// funzione per creare html
+// Funzione per creare l'HTML dinamicamente
+function createHTMLElement(obj) {
+  return `<div class="team-member">
+        <img src="${obj.img}" alt="${obj.name}" />
+        <div>
+          <span>${obj.name}</span>
+          ${obj.role}
+          <a href="mailto:${obj.email}">${obj.email}</a>
+        </div>
+      </div>`;
+}
